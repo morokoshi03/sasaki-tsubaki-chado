@@ -621,6 +621,14 @@ em { font-style: normal; }
   color: var(--sumi-soft);
 }
 
+.contact-mail {
+  margin-top: 22px;
+  font-family: var(--font-en);
+  font-size: 0.9rem;
+  letter-spacing: 0.14em;
+  color: var(--sumi-soft);
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
   background: var(--sumi);

@@ -24,6 +24,5 @@ python3 -m http.server 8000
 ## 今後の更新メモ
 
 - プロフィール写真・手元写真・道具写真などの実写素材の差し替え
-- Podcast「雑茶」のSpotify / Apple Podcastリンクの設定(`index.html` 内の `podcast-links`)
 - SNSリンクの追加
 - 英語ページの追加
