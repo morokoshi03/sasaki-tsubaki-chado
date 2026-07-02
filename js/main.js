@@ -26,7 +26,7 @@ nav.querySelectorAll('a').forEach((link) => {
 
 // スクロールに合わせたフェードイン
 const revealTargets = document.querySelectorAll(
-  '.section-label, .section-title, .section-lead, .concept-body, ' +
+  '.section-label, .section-title, .section-lead, .concept-body, .concept-photo, .philosophy-photo, ' +
   '.about-side, .about-main, .philosophy-intro, .philosophy-list li, ' +
   '.philosophy-close, .activity-card, .podcast-visual, .podcast-body, ' +
   '.contact-lead, .contact-types, .contact-cta'

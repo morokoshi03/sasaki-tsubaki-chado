@@ -253,26 +253,29 @@ em { font-style: normal; }
   height: 21em;
 }
 
-.hero-circle {
+.hero-photo {
   position: relative;
-  width: clamp(180px, 22vw, 260px);
-  height: clamp(180px, 22vw, 260px);
+  width: clamp(240px, 26vw, 330px);
+  aspect-ratio: 3 / 4;
+  border-radius: 2px;
+  overflow: visible;
 }
 
-.enso {
+.hero-photo img {
   width: 100%;
   height: 100%;
-  color: var(--matcha);
-  opacity: 0.5;
-  transform: rotate(-12deg);
+  object-fit: cover;
+  border-radius: 2px;
+  box-shadow: 0 24px 60px rgba(43, 42, 38, 0.18);
 }
 
-.hero-tsubaki {
+.hero-photo::after {
+  content: "";
   position: absolute;
-  right: 6%;
-  bottom: 8%;
-  width: 22%;
-  height: 22%;
+  inset: 14px -14px -14px 14px;
+  border: 1px solid var(--take);
+  border-radius: 2px;
+  z-index: -1;
 }
 
 .hero-name {
@@ -369,6 +372,24 @@ em { font-style: normal; }
   padding-bottom: 2px;
 }
 
+.concept-photo {
+  max-width: 460px;
+  margin: 70px auto 0;
+}
+
+.concept-photo img {
+  width: 100%;
+  border-radius: 2px;
+}
+
+.concept-photo figcaption,
+.philosophy-photo figcaption {
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  color: var(--sumi-soft);
+  margin-top: 14px;
+}
+
 /* ---------- About ---------- */
 .about { background: var(--white); }
 
@@ -380,6 +401,18 @@ em { font-style: normal; }
 }
 
 .about-side { position: sticky; top: 120px; }
+
+.about-photo {
+  margin: 4px 0 26px;
+}
+
+.about-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: 50% 18%;
+  border-radius: 2px;
+}
 
 .about-facts {
   border-top: 1px solid var(--line);
@@ -472,6 +505,22 @@ em { font-style: normal; }
   color: rgba(250, 247, 240, 0.92);
 }
 
+.philosophy-photo {
+  margin-top: 70px;
+}
+
+.philosophy-photo img {
+  width: 100%;
+  max-height: 440px;
+  object-fit: cover;
+  object-position: 50% 62%;
+  border-radius: 2px;
+}
+
+.philosophy-photo figcaption {
+  color: rgba(250, 247, 240, 0.55);
+}
+
 /* ---------- Activities ---------- */
 .activity-grid {
   display: grid;
@@ -485,7 +534,23 @@ em { font-style: normal; }
   border-radius: 4px;
   padding: clamp(30px, 3.6vw, 44px);
   position: relative;
+  overflow: hidden;
   transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+.activity-photo {
+  margin: calc(clamp(30px, 3.6vw, 44px) * -1) calc(clamp(30px, 3.6vw, 44px) * -1) 28px;
+}
+
+.activity-photo img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.activity-photo img.crop-lower {
+  object-position: 50% 62%;
 }
 
 .activity-card:hover {
@@ -731,13 +796,16 @@ em { font-style: normal; }
   .nav-toggle.is-open span:nth-child(1) { top: 20px; transform: rotate(45deg); }
   .nav-toggle.is-open span:nth-child(2) { top: 20px; transform: rotate(-45deg); }
 
-  .hero { padding-bottom: 150px; }
+  .hero { padding-bottom: 170px; }
   .hero-inner { flex-direction: column; align-items: flex-start; }
-  .hero-visual { display: none; }
+  .hero-vertical { display: none; }
+  .hero-photo { width: min(72vw, 300px); margin: 0 auto; }
+  .hero-visual { align-self: center; }
   .hero-name { bottom: 56px; }
 
   .about-grid, .podcast-grid { grid-template-columns: 1fr; }
   .about-side { position: static; }
+  .about-photo { display: none; }
 
   .philosophy-list, .activity-grid { grid-template-columns: 1fr; }
 }
