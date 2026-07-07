@@ -384,6 +384,13 @@ em { font-style: normal; }
 
 .about-side { position: sticky; top: 120px; }
 
+.about-tagline {
+  font-size: 0.88rem;
+  letter-spacing: 0.1em;
+  color: var(--matcha-deep);
+  margin: -24px 0 26px;
+}
+
 .about-photo {
   margin: 4px 0 26px;
 }
@@ -739,6 +746,36 @@ em { font-style: normal; }
   background: var(--tsubaki);
 }
 
+/* ---------- Use Cases ---------- */
+.usecases { background: var(--kinari); }
+
+.usecase-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 clamp(36px, 6vw, 80px);
+  max-width: 960px;
+}
+
+.usecase-grid li {
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+  font-family: var(--font-mincho);
+  font-size: 1.02rem;
+  letter-spacing: 0.08em;
+  line-height: 1.9;
+  padding: 22px 4px;
+  border-top: 1px solid var(--line);
+}
+
+.usecase-grid li span {
+  font-family: var(--font-en);
+  font-size: 0.82rem;
+  letter-spacing: 0.2em;
+  color: var(--tsubaki);
+  flex-shrink: 0;
+}
+
 /* ---------- Programs ---------- */
 .program-table {
   border-top: 1px solid var(--line);
@@ -1012,6 +1049,8 @@ em { font-style: normal; }
   .philosophy-list, .activity-grid { grid-template-columns: 1fr; }
 
   .cta-grid { grid-template-columns: 1fr; }
+
+  .usecase-grid { grid-template-columns: 1fr; }
 
   .program-table > div { grid-template-columns: 1fr; gap: 4px; padding: 14px 4px; }
 

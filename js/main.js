@@ -29,7 +29,7 @@ const revealTargets = document.querySelectorAll(
   '.section-label, .section-title, .section-lead, .philosophy-photo, ' +
   '.about-side, .about-main, .philosophy-intro, .philosophy-list li, ' +
   '.philosophy-close, .activity-card, .podcast-visual, .podcast-body, ' +
-  '.hotels-body, .hotels-photo, .exec-body, .exec-themes, .program-table, ' +
+  '.hotels-body, .hotels-photo, .exec-body, .exec-themes, .program-table, .usecase-grid li, ' +
   '.contact-lead, .cta-card, .contact-guide, .contact-mail'
 );
 
