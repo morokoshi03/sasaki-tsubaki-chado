@@ -13,7 +13,7 @@
 - `css/style.css` — スタイル(生成り・深緑・墨色・竹色を基調、椿色を差し色に)
 - `js/main.js` — ナビゲーションとスクロール演出
 - `favicon.svg` — 椿のシンボルマーク
-- `images/` — 本人提供の写真(プロフィール・点前・茶花・露地・床の間)。道具の写真1点(Activities 04)は[Unsplash](https://unsplash.com)のフリー素材をCDN直リンクで使用
+- `images/` — 本人提供の写真(プロフィール・手元・道具・茶花・露地・床の間)とPodcast「雑茶」のアートワーク
 
 ## ローカルで確認する
 
@@ -26,4 +26,3 @@ python3 -m http.server 8000
 
 - SNSリンクの追加
 - 英語ページの追加
-- ご本人の道具写真が揃ったら、Unsplash素材1点(Activities 04)を差し替え
