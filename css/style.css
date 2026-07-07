@@ -246,6 +246,18 @@ em { font-style: normal; }
   animation: fade 1.4s ease 0.8s forwards;
 }
 
+.hero-cred {
+  font-size: 0.82rem;
+  letter-spacing: 0.1em;
+  line-height: 2;
+  color: var(--matcha-deep);
+  border-left: 2px solid var(--take);
+  padding-left: 16px;
+  margin: -22px 0 40px;
+  opacity: 0;
+  animation: fade 1.4s ease 0.95s forwards;
+}
+
 .hero-cta {
   display: flex;
   flex-wrap: wrap;
@@ -892,6 +904,30 @@ em { font-style: normal; }
   font-weight: 400;
   font-size: 0.92rem;
   letter-spacing: 0.06em;
+}
+
+.cta-card small {
+  display: block;
+  font-size: 0.78rem;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  margin-top: 10px;
+  color: var(--sumi-soft);
+}
+
+.cta-card.cta-featured {
+  background: var(--matcha-deep);
+  border-color: var(--matcha-deep);
+  color: var(--kinari);
+}
+
+.cta-card.cta-featured .cta-en { color: var(--kincha); }
+.cta-card.cta-featured small { color: rgba(250, 247, 240, 0.7); }
+
+.cta-card.cta-featured:hover {
+  background: var(--matcha);
+  border-color: var(--matcha);
+  box-shadow: 0 12px 32px rgba(46, 73, 52, 0.3);
 }
 
 .contact-guide {
