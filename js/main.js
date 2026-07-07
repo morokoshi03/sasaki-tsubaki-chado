@@ -26,10 +26,11 @@ nav.querySelectorAll('a').forEach((link) => {
 
 // スクロールに合わせたフェードイン
 const revealTargets = document.querySelectorAll(
-  '.section-label, .section-title, .section-lead, .concept-body, .concept-photo, .philosophy-photo, ' +
+  '.section-label, .section-title, .section-lead, .philosophy-photo, ' +
   '.about-side, .about-main, .philosophy-intro, .philosophy-list li, ' +
   '.philosophy-close, .activity-card, .podcast-visual, .podcast-body, ' +
-  '.contact-lead, .contact-types, .contact-cta'
+  '.hotels-body, .hotels-photo, .exec-body, .exec-themes, .program-table, ' +
+  '.contact-lead, .cta-card, .contact-guide, .contact-mail'
 );
 
 revealTargets.forEach((el) => el.classList.add('reveal'));
